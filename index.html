@@ -1,85 +1,117 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Libur Maulid Pesantren Sirojul ‘Ulum</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Libur Maulid - Pondok Sirojul 'Ulum</title>
+  <meta name="description" content="Pengumuman libur Maulid Nabi Muhammad SAW - Pondok Pesantren Tahfidhil Qur'an Sirojul 'Ulum" />
   <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f8f9fc;
-      color: #333;
+    :root{
+      --green-50:#F0FFF4;
+      --green-100:#C6F6D5;
+      --green-200:#9AE6B4;
+      --green-400:#68D391;
+      --green-700:#2F855A;
+      --text:#064E3B;
+      --muted:#2F855A99;
+      --card:#ffffff;
+      --ornament:#E6FFFA;
+      --radius:16px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     }
-    header {
-      background: linear-gradient(135deg, #6c63ff, #7b2ff7);
-      color: white;
-      padding: 20px 10%;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 1.8rem;
-    }
-    header p {
-      margin: 5px 0 0;
-      font-size: 0.95rem;
-    }
-    main {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
-      background: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    }
-    main h2 {
-      font-size: 1.5rem;
-      margin-bottom: 15px;
-      color: #4b3cc4;
-    }
-    main p {
-      line-height: 1.7;
-      margin-bottom: 15px;
-      font-size: 1rem;
-    }
-    footer {
-      background: #f1f1f1;
-      text-align: center;
-      padding: 15px 10px;
-      font-size: 0.9rem;
-      color: #555;
-      margin-top: 40px;
-    }
+
+    html,body{height:100%;margin:0;background:linear-gradient(180deg,var(--green-50),#ffffff);} 
+    .container{max-width:900px;margin:48px auto;padding:28px}
+    .card{background:var(--card);border-radius:var(--radius);box-shadow:0 8px 30px rgba(6,78,59,0.06);padding:28px}
+    header{display:flex;gap:18px;align-items:center}
+    .logo{width:72px;height:72px;flex:0 0 72px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--green-100),var(--green-400));display:flex;align-items:center;justify-content:center}
+    .logo svg{width:44px;height:44px}
+    h1{margin:0;color:var(--text);font-size:20px}
+    .subtitle{color:var(--green-700);margin-top:6px;font-size:13px}
+    time{color:var(--muted);font-size:13px}
+
+    .prose{color:var(--text);line-height:1.7;margin-top:18px}
+    .prose h3{margin:18px 0 8px;color:var(--green-700)}
+    ul{margin:8px 0 0 20px}
+    .actions{display:flex;gap:12px;margin-top:20px;align-items:center}
+    .btn{display:inline-block;padding:10px 14px;border-radius:999px;text-decoration:none;font-weight:600;font-size:14px}
+    .btn-primary{background:var(--green-700);color:white}
+    .btn-outline{background:transparent;border:1px solid var(--green-200);color:var(--green-700)}
+
+    .footer{margin-top:28px;font-size:13px;color:var(--muted);text-align:center}
+
+    /* decorative corner */
+    .corner{position:fixed;right:18px;bottom:18px;width:140px;height:140px;opacity:0.18}
+
+    /* responsive */
+    @media(max-width:640px){.container{margin:18px;padding:18px}.logo{width:56px;height:56px}.card{padding:18px}}
   </style>
 </head>
 <body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="logo" aria-hidden>
+          <!-- Islamic geometric motif -->
+          <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="ornamen islamic">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0%" stop-color="#9AE6B4"/>
+                <stop offset="100%" stop-color="#68D391"/>
+              </linearGradient>
+            </defs>
+            <circle cx="50" cy="50" r="48" fill="none" stroke="url(#g)" stroke-width="4"/>
+            <path d="M50 14 L61 36 L86 36 L65 52 L74 86 L50 66 L26 86 L35 52 L14 36 L39 36 Z" fill="#ECFDF5" stroke="url(#g)" stroke-width="1.5"/>
+          </svg>
+        </div>
 
-  <header>
-    <h1>Libur Maulid, Santri Sirojul ‘Ulum Diimbau Tetap Jaga Nilai-Nilai Kepesantrenan</h1>
-    <p>Pondok Pesantren Tahfidhil Qur’an Sirojul ‘Ulum, Semanding, Pare, Kediri</p>
-    <p><i>Kediri, 19 September 2025</i></p>
-  </header>
+        <div>
+          <h1>Libur Maulid Nabi Muhammad SAW — Pondok Pesantren Tahfidhil Qur’an Sirojul ‘Ulum</h1>
+          <div class="subtitle">Semanding, Tertek, Pare — Kediri</div>
+          <div style="margin-top:6px"><time datetime="2025-09-19">Kediri, 19 September 2025</time></div>
+        </div>
+      </header>
 
-  <main>
-    <h2>Pengumuman Libur</h2>
-    <p>
-      Pondok Pesantren Tahfidhil Qur’an Sirojul ‘Ulum, Semanding, Pare, Kediri, mengumumkan libur Maulid Nabi Muhammad SAW bagi seluruh santri mulai Jum’at, 19 September 2025 / 26 Rabi’ul Awal 1447 H hingga Selasa, 30 September 2025 / 8 Rabi’ul Tsani 1447 H.
-    </p>
+      <section class="prose" aria-labelledby="judul">
+        <p><strong>Pondok Pesantren Tahfidhil Qur’an Sirojul ‘Ulum</strong> mengumumkan libur Maulid Nabi Muhammad SAW bagi seluruh santri. <strong>Periode libur:</strong> <strong>Jum’at, 19 September 2025 (26 Rabi’ul Awal 1447 H)</strong> sampai <strong>Selasa, 30 September 2025 (8 Rabi’ul Tsani 1447 H)</strong>. Seluruh santri diwajibkan kembali ke pondok sesuai jadwal yang ditetapkan.</p>
 
-    <p>
-      Pihak pondok menjelaskan, liburan ini merupakan agenda tahunan dalam rangka memperingati kelahiran Nabi Muhammad SAW. Selama libur, santri diimbau untuk tetap menjaga akhlak, melaksanakan sholat berjamaah, serta terus murojaah hafalan Al-Qur’an.
-    </p>
+        <h3>Apa & Mengapa</h3>
+        <p>Libur ini merupakan agenda tahunan untuk memperingati kelahiran Nabi Muhammad SAW dan memberi kesempatan santri berkumpul dengan keluarga.</p>
 
-    <p>
-      Pesantren juga menekankan pentingnya menjaga nama baik lembaga, berhati-hati dalam berkendara, serta bijak menggunakan media sosial. Seluruh santri diwajibkan kembali ke pondok tepat waktu sesuai jadwal yang ditentukan.
-    </p>
-  </main>
+        <h3>Siapa & Di mana</h3>
+        <p>Pengumuman ditujukan untuk seluruh santri Pondok Pesantren Tahfidhil Qur’an Sirojul ‘Ulum yang berlokasi di Semanding, Tertek, Pare, Kediri.</p>
 
-  <footer>
-    &copy; 2025 Pondok Pesantren Sirojul ‘Ulum | Iqbal Fannani
-  </footer>
+        <h3>Bagaimana (Imbauan)</h3>
+        <ul>
+          <li>Menjaga akhlak dan nama baik pondok di rumah dan masyarakat.</li>
+          <li>Melaksanakan sholat berjamaah serta terus murojaah hafalan Al-Qur’an ("nderes").</li>
+          <li>Berhati-hati saat berkendara dan menjaga kesehatan.</li>
+          <li>Bijak menggunakan smartphone dan media sosial; batasi aktivitas yang tidak bermanfaat.</li>
+        </ul>
 
+        <h3>Penutup</h3>
+        <p>Pondok menegaskan bahwa setiap santri adalah representasi nilai pesantren. Di manapun berada, santri diharapkan menjaga sikap dan perilaku sebagai bentuk tanggung jawab moral dan dakwah. Pondok mendoakan keberkahan bagi seluruh santri dan keluarga selama masa liburan.</p>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#" onclick="window.print();return false;">Cetak</a>
+          <a class="btn btn-outline" href="#">Unduh PDF</a>
+          <div style="margin-left:auto;color:var(--muted);font-size:13px">Pengumuman resmi • 19 Sep 2025</div>
+        </div>
+      </section>
+
+      <footer class="footer">© 2025 Pondok Pesantren Tahfidhil Qur’an Sirojul ‘Ulum — Semua hak dilindungi.</footer>
+    </div>
+  </div>
+
+  <!-- decorative corner motif -->
+  <svg class="corner" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+    <defs>
+      <linearGradient id="g2" x1="0" x2="1">
+        <stop offset="0%" stop-color="#C6F6D5"/>
+        <stop offset="100%" stop-color="#68D391"/>
+      </linearGradient>
+    </defs>
+    <path d="M100 0 C140 0 200 40 200 100 C200 160 140 200 100 200 C60 200 0 160 0 100 C0 40 60 0 100 0 Z" fill="url(#g2)"/>
+  </svg>
 </body>
 </html>
